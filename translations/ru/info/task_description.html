@@ -22,15 +22,7 @@
         <strong>Пример:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">countConsecutiveSummers(42) == 4
-countConsecutiveSummers(99) == 6
-</pre>
-{% else %}
-<pre class="brush: python">count_consecutive_summers(42) == 4
-count_consecutive_summers(99) == 6
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 <p>

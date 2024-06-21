@@ -10,25 +10,35 @@ Each test is a dict with
 
 TESTS = {
     "Basics": [
-        {
-        "input": [["PATO", "PELE"]],
-        "answer": [1, 1]
+    {
+        "input": ["PATO", "PELE"],
+        "answer": (1, 1),
     },
     {
-        "input": [["ANJO", "MENTORA"]],
-        "answer": [4, 5]
+        "input": ["ANJO", "MENTORA"],
+        "answer": (4, 5),
     },
     {
-        "input": [["MENTORA", "ANJO"]],
-        "answer": [7, 1]
+        "input": ["URUBU", "POLIVALENTE"],
+        "answer": (-1, -1),
+    },
+    ],
+    "Extra": [
+    {
+        "input": ["MENTORA", "ANJO"],
+        "answer": (7, 1),
     },
     {
-        "input": [["URUBU", "POLIVALENTE"]],
-        "answer": [-1, -1]
+        "input": ["A", "A"],
+        "answer": (1, 1),
     },
     {
-        "input": [["ATRITO", "TRUTA"]],
-        "answer": [5,4]
-    }
+        "input": ["A", "B"],
+        "answer": (-1, -1),
+    },
+    {
+        "input": ["ATRITO", "TRUTA"],
+        "answer": (5, 4),
+    },
     ]
 }

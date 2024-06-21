@@ -1,38 +1,33 @@
 <!-- Describe task in general -->
+<p style="text-align: justify;">
+    In a crossword game, the player fills a rectangle with black and white squares, where each blank row and column must be filled with a word. The horizontal words intersect with the vertical words in common letters. In this mission only two words are given.
+</p>
 
-<p>
-    Em um jogo de palavras cruzadas, o jogador preenche um retângulo com quadrados em branco e pretos, onde cada linha e coluna em branco deve ser preenchida com uma palavra. As palavras horizontais cruzam com as palavras verticais em letras comuns. Dadas uma palavra horizontal e uma palavra vertical, sua tarefa é encontrar a melhor letra de cruzamento entre elas, definida como a letra que permite o cruzamento mais à direita na palavra horizontal e, em caso de empate, o cruzamento mais abaixo na palavra vertical.
+<p style="text-align: justify;">
+    Given a horizontal word and a vertical word, your task is to find the best crossing letter between them, defined as the letter that allows the rightmost crossing in the horizontal word and, in the event of a tie, the lowest crossing in the vertical word.
+</p>
+
+<p style="text-align: justify;">
+    You need to return a tuple of two integers: 1-based indexes of common letter in horizontal and vertical words respectively. If there is no common letter return -1, -1.
 </p>
 
 <img  title="example" src="{{MEDIA}}palavras-cruzadas.png" alt="example" style="max-height: 300px"/>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> Duas strings em uma lista: a primeira string é a palavra horizontal, e a segunda string é a palavra vertical.
+    <strong>Input:</strong> Two strings <span translate="no">(str{% if is_js %}ing{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Saída: </strong> Uma lista de dois inteiros descrevendo a melhor letra de cruzamento: o índice na palavra horizontal e o índice na palavra vertical. Se não houver cruzamento possível, ambos os inteiros devem ser -1.
+    <strong>Output:</strong> Tuple of two integers <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 
 <!-- Put some usage examples -->
 <div class="for_info_only">
     <p>
-        <strong>Example:</strong>
+        <strong>Examples:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">countConsecutiveSummers(42) == 4
-countConsecutiveSummers(99) == 6
-</pre>
-{% else %}
-<pre class="brush: python">
-    palavras_cruzadas(["PATO", "PELE"]) >> [1, 1]
-palavras_cruzadas(["ANJO", "MENTORA"]) >> [4, 5]
-palavras_cruzadas(["MENTORA", "ANJO"]) >> [7, 1]
-palavras_cruzadas(["URUBU", "POLIVALENTE"]) >> [-1, -1]
-
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
