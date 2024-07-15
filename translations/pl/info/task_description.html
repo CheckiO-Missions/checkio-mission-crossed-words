@@ -1,0 +1,33 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    W krzyżówce gracz wypełnia prostokąt czarnymi i białymi kwadratami, gdzie każdy pusty rząd i kolumna muszą być wypełnione słowem. Słowa poziome przecinają się ze słowami pionowymi za pomocą wspólnych liter. W tej misji podane są tylko dwa słowa.
+</p>
+
+<p style="text-align: justify;">
+    Biorąc pod uwagę słowo poziome i słowo pionowe, zadaniem gracza jest znalezienie najlepiej przecinającej się litery między nimi, zdefiniowanej jako litera, która pozwala na najbardziej prawe przecięcie w słowie poziomym i, w przypadku remisu, najniższe przecięcie w słowie pionowym.
+</p>
+
+<p style="text-align: justify;">
+    Proszę zwrócić krotkę składającą się z dwóch liczb całkowitych: indeksów wspólnych liter odpowiednio w słowie poziomym i pionowym. Jeśli nie ma wspólnej litery, proszę zwrócić -1, -1.
+</p>
+
+<img  title="example" src="{{MEDIA}}palavras-cruzadas.png" alt="example" style="max-height: 300px"/>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Wejście:</strong> Dwa duże ciągi znaków <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Krotka dwóch liczb całkowitych <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Przykłady:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
