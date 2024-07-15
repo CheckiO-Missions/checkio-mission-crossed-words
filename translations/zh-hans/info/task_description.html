@@ -1,0 +1,33 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    在填字游戏中，玩家要在长方形中填入黑白方格，每一行和每一列都必须填入一个单词。横向单词与竖向单词以共同字母相交。本任务只给出两个单词。
+</p>
+
+<p style="text-align: justify;">
+    给定一个横向单词和一个竖向单词，您的任务是找出它们之间的最佳交叉字母，即在横向单词中交叉点最右边的字母，如果出现平局，则在竖向单词中交叉点最少的字母。
+</p>
+
+<p style="text-align: justify;">
+    您需要返回一个由两个整数组成的元组：分别是横向词和纵向词中以 1 为基准的公共字母索引。如果没有共同字母，则返回-1，-1。
+</p>
+
+<img  title="example" src="{{MEDIA}}palavras-cruzadas.png" alt="example" style="max-height: 300px"/>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>两个大写字符串 <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出： 两个整数的元组</strong>两个整数的元组 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>示例</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
