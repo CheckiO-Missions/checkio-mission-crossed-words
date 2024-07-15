@@ -1,0 +1,33 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Dans un jeu de mots croisés, le joueur remplit un rectangle avec des carrés noirs et blancs, où chaque ligne et chaque colonne vides doivent être remplies par un mot. Les mots horizontaux se croisent avec les mots verticaux en lettres communes. Dans cette mission, seuls deux mots sont donnés.
+</p>
+
+<p style="text-align: justify;">
+    Étant donné un mot horizontal et un mot vertical, votre tâche consiste à trouver la meilleure lettre de croisement entre eux, définie comme la lettre qui permet le croisement le plus à droite dans le mot horizontal et, en cas d'égalité, le croisement le plus bas dans le mot vertical.
+</p>
+
+<p style="text-align: justify;">
+    Vous devez renvoyer un tuple de deux entiers: les indices basés sur 1 de la lettre commune dans les mots horizontaux et verticaux respectivement. S'il n'y a pas de lettre commune, renvoyez -1, -1.
+</p>
+
+<img  title="example" src="{{MEDIA}}palavras-cruzadas.png" alt="example" style="max-height: 300px"/>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Deux chaînes de caractères en majuscules <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Tuple de deux entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Exemples:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
