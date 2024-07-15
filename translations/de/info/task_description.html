@@ -1,0 +1,33 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Bei einem Kreuzworträtsel füllt der Spieler ein Rechteck mit schwarzen und weißen Quadraten aus, wobei jede leere Zeile und Spalte mit einem Wort gefüllt werden muss. Die horizontalen Wörter kreuzen sich mit den vertikalen Wörtern in gemeinsamen Buchstaben. In dieser Mission sind nur zwei Wörter vorgegeben.
+</p>
+
+<p style="text-align: justify;">
+    Bei einem horizontalen und einem vertikalen Wort besteht Ihre Aufgabe darin, den besten Kreuzungsbuchstaben zwischen den beiden Wörtern zu finden. Dieser ist definiert als der Buchstabe, der die Kreuzung ganz rechts im horizontalen Wort und, im Falle eines Gleichstands, die niedrigste Kreuzung im vertikalen Wort ermöglicht.
+</p>
+
+<p style="text-align: justify;">
+    Sie müssen ein Tupel aus zwei ganzen Zahlen zurückgeben: 1-basierte Indizes der gemeinsamen Buchstaben im horizontalen bzw. vertikalen Wort. Wenn es keinen gemeinsamen Buchstaben gibt, geben Sie -1, -1 zurück.
+</p>
+
+<img  title="example" src="{{MEDIA}}palavras-cruzadas.png" alt="example" style="max-height: 300px"/>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zwei Zeichenketten in Großbuchstaben <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Tupel aus zwei ganzen Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
